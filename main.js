@@ -358,7 +358,7 @@ function initSharingControlAnimation() {
   }
 
   // Camera Position
-  camera.position.set(5, 5, 5);
+  camera.position.set(6, 6, 6);
   camera.lookAt(0, 0, 0);
 
   // Animation Loop
