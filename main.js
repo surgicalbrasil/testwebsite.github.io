@@ -388,3 +388,15 @@ function initSharingControlAnimation() {
 
 // Initialize Animation
 initSharingControlAnimation();
+
+
+
+// FAQ
+document.querySelectorAll('.faq-item button').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    const isOpen = content.style.maxHeight;
+    content.style.maxHeight = isOpen ? null : `${content.scrollHeight}px`;
+    btn.querySelector('svg').classList.toggle('rotate-180');
+  });
+});

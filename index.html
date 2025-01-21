@@ -41,160 +41,252 @@
   <section id="hero" class="relative h-screen flex items-center justify-center text-center bg-[#1D3557] text-white">
     <div id="three-container" class="absolute inset-0 z-0"></div>
     <div class="relative z-10">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">SurgicalBrasil</h1>
-      <p class="text-lg md:text-2xl mb-6">Empowering researchers with secure, decentralized publishing.</p>
-      <button class="px-8 py-4 bg-[#2A9D8F] text-white font-semibold rounded-md hover:bg-[#457B9D] transition duration-300">
-        Get Started
-      </button>
+      <h1 class="text-6xl md:text-8xl font-bold mb-8">SurgicalBrasil</h1>
+      <p class="text-2xl md:text-4xl mb-8">Empowering researchers with secure, decentralized publishing.</p>
     </div>
-  </section>
+  </section>  
   
+  <!-- Problem Boxes and Images in Zigzag Pattern -->
+  <section id="problem-section" class="w-full min-h-screen bg-white flex flex-col justify-center items-center py-8 px-4">
+    <h2 class="problem-box text-4xl md:text-5xl font-bold mb-16 text-center" data-animation="animate__fadeInDown">
+      What are the main challenges faced by early-career researchers?
+    </h2>
+    <div class="flex flex-col gap-16 w-full max-w-7xl">
+      
+      <!-- Row 1: Heading + Boxes 1 and 2 with Image 1 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <!-- Left Column: Two Problem Boxes -->
+        <div class="space-y-6">
+          <!-- Heading 1 Styled -->
+          <h3 class="text-3xl md:text-4xl font-extrabold mt-6 tracking-tight text-gray-900 border-b-4 border-[#2A9D8F] pb-2">
+            Recognition Challenges
+          </h3>
+          <!-- Box 1 -->
+          <div class="problem-box p-6 bg-gray-100 rounded-lg shadow-md text-center" data-animation="animate__fadeInLeft">
+            <h3 class="text-xl font-bold mb-4" style="color: #2A9D8F;">Lack of Recognition</h3>
+            <p class="text-base text-gray-700">
+              Many early-career researchers struggle to gain recognition for their work due to limited publication options and competition from established researchers.
+            </p>
+          </div>
+        </div>
+        <!-- Right Column: Image 1 -->
+        <div class="w-full">
+          <img src="images/recognition.jpg" alt="Lack of Recognition" class="w-full h-auto max-h-72 object-cover rounded-xl shadow-lg">
+        </div>
+      </div>
 
-  <!-- Problem Section -->
-  <!-- Problem Section -->
-<section id="problem" class="py-16 px-8 bg-white">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-8 text-[#1D3557]">The Problem</h2>
-      <p class="text-lg text-gray-600 mb-12">
-        Early-career researchers face significant challenges in gaining recognition for their work, protecting intellectual property, and ensuring their research is presented clearly and securely.
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Problem 1 -->
-        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
-          <h3 class="text-2xl font-semibold text-[#2A9D8F] mb-4">Lack of Recognition</h3>
-          <p class="text-gray-700">
-            Many early-career researchers struggle to gain recognition for their work due to limited publication options and competition from established researchers.
-          </p>
+      <!-- Row 2: Heading + Boxes 3 and 4 with Image 2 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <!-- Left Column: Image 2 -->
+        <div class="w-full order-last md:order-first">
+          <img src="images/security.jpg" alt="Security Risks" class="w-full h-auto max-h-72 object-cover rounded-xl shadow-lg">
         </div>
-        <!-- Problem 2 -->
-        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
-          <h3 class="text-2xl font-semibold text-[#E76F51] mb-4">Security Risks</h3>
-          <p class="text-gray-700">
-            Centralized platforms offer little protection for sensitive data, leading to trust issues and potential IP theft.
-          </p>
+        <!-- Right Column: Two Problem Boxes -->
+        <div class="space-y-6">
+          <!-- Heading 2 Styled -->
+          <h3 class="text-3xl md:text-4xl font-extrabold mb-6 tracking-tight text-gray-900 border-b-4 border-[#E76F51] pb-2">
+            Security Concerns
+          </h3>
+          <!-- Box 2 -->
+          <div class="problem-box p-6 bg-gray-100 rounded-lg shadow-md text-center" data-animation="animate__fadeInRight">
+            <h3 class="text-xl font-bold mb-4" style="color: #E76F51;">Security Risks</h3>
+            <p class="text-base text-gray-700">
+              Centralized platforms offer little protection for sensitive data, leading to trust issues and potential IP theft.
+            </p>
+          </div>
         </div>
-        <!-- Problem 3 -->
-        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
-          <h3 class="text-2xl font-semibold text-[#457B9D] mb-4">Transparency Issues</h3>
-          <p class="text-gray-700">
-            Existing publishing methods lack transparency, making it difficult to trace authorship and verify data integrity.
-          </p>
+      </div>
+
+      <!-- Row 3: Heading + Boxes 5 and 6 with Image 3 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <!-- Left Column: Two Problem Boxes -->
+        <div class="space-y-6">
+          <!-- Heading 3 Styled -->
+          <h3 class="text-3xl md:text-4xl font-extrabold mb-6 tracking-tight text-gray-900 border-b-4 border-[#457B9D] pb-2">
+            Transparency Issues
+          </h3>
+          <!-- Box 3 -->
+          <div class="problem-box p-6 bg-gray-100 rounded-lg shadow-md text-center" data-animation="animate__fadeInLeft">
+            <h3 class="text-xl font-bold mb-4" style="color: #457B9D;">Transparency Issues</h3>
+            <p class="text-base text-gray-700">
+              Existing publishing methods lack transparency, making it difficult to trace authorship and verify data integrity.
+            </p>
+          </div>
+        </div>
+        <!-- Right Column: Image 3 -->
+        <div class="w-full">
+          <img src="images/transparency.jpg" alt="Transparency Issues" class="w-full h-auto max-h-72 object-cover rounded-xl shadow-lg">
         </div>
       </div>
     </div>
   </section>
-  
+
 
  <!-- Solution Section -->
-<section id="solution" class="py-16 px-8 bg-gray-50">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-4xl font-bold mb-12 text-center text-[#1D3557]">Our Solution</h2>
-  
-      <!-- Row 1 -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-        <!-- Text on the left -->
-        <div class="text-center md:text-left">
-          <h3 class="text-3xl font-semibold text-[#2A9D8F] mb-4">Decentralized Data Storage</h3>
-          <p class="text-lg text-gray-600">
-            We leverage Web3 technology to store your research data on a decentralized network, eliminating central points of failure and ensuring data availability at all times.
-          </p>
-        </div>
-        <!-- Canvas for Animation -->
-        <div id="canvas-storage" class="w-full h-64 rounded-lg"></div>
+ <section id="solution" class="py-16 px-8 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold mb-12 text-center text-[#1D3557]">Our Solution</h2>
+
+    <!-- Row 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+      <!-- Text on the left -->
+      <div class="text-center md:text-left">
+        <h3 class="text-3xl font-semibold text-[#2A9D8F] mb-4">Decentralized Data Storage</h3>
+        <p class="text-lg text-gray-600">
+          We leverage Web3 technology to store your research data on a decentralized network, eliminating central points of failure and ensuring data availability at all times.
+        </p>
       </div>
-  
-      <!-- Row 2 -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-        <!-- Canvas for Animation -->
-        <div id="canvas-encryption" class="w-full h-64 rounded-lg order-last md:order-first"></div>
-        <!-- Text on the right -->
-        <div class="text-center md:text-left">
-          <h3 class="text-3xl font-semibold text-[#E76F51] mb-4">Advanced Data Encryption</h3>
-          <p class="text-lg text-gray-600">
-            Your data is encrypted using advanced cryptographic techniques, ensuring that only authorized users can access sensitive information.
-          </p>
-        </div>
-      </div>
-  
-      <!-- Row 3 -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <!-- Text on the left -->
-        <div class="text-center md:text-left">
-          <h3 class="text-3xl font-semibold text-[#457B9D] mb-4">Full Control Over Sharing</h3>
-          <p class="text-lg text-gray-600">
-            You decide who can access your research. Our platform allows you to securely share your data with specific individuals or organizations while maintaining full control.
-          </p>
-        </div>
-        <!-- Canvas for Animation -->
-        <div id="canvas-sharing" class="w-full h-64 rounded-lg"></div>
-      </div>
-  
-      <!-- Call to Action -->
-      <div class="mt-16 text-center">
-        <button class="px-8 py-4 bg-[#2A9D8F] text-white font-semibold rounded-md hover:bg-[#457B9D] transition duration-300">
-          Get Started with SurgicalBrasil
-        </button>
+      <!-- Canvas for Animation -->
+      <div id="canvas-storage" class="w-full h-64 rounded-lg"></div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+      <!-- Canvas for Animation -->
+      <div id="canvas-encryption" class="w-full h-64 rounded-lg order-last md:order-first"></div>
+      <!-- Text on the right -->
+      <div class="text-center md:text-left">
+        <h3 class="text-3xl font-semibold text-[#E76F51] mb-4">Advanced Data Encryption</h3>
+        <p class="text-lg text-gray-600">
+          Your data is encrypted using advanced cryptographic techniques, ensuring that only authorized users can access sensitive information.
+        </p>
       </div>
     </div>
-  </section>
-  
-  
+
+    <!-- Row 3 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Text on the left -->
+      <div class="text-center md:text-left">
+        <h3 class="text-3xl font-semibold text-[#457B9D] mb-4">Full Control Over Sharing</h3>
+        <p class="text-lg text-gray-600">
+          You decide who can access your research. Our platform allows you to securely share your data with specific individuals or organizations while maintaining full control.
+        </p>
+      </div>
+      <!-- Canvas for Animation -->
+      <div id="canvas-sharing" class="w-full h-64 rounded-lg"></div>
+    </div>
+
+    <!-- Call to Action Buttons -->
+    <div class="mt-16 text-center space-x-4">
+      <button class="px-8 py-4 bg-[#2A9D8F] text-white font-semibold rounded-md hover:bg-[#457B9D] transition duration-300">
+        Text1
+      </button>
+      <button class="px-8 py-4 bg-[#E76F51] text-white font-semibold rounded-md hover:bg-[#C8553D] transition duration-300">
+        Text2
+      </button>
+    </div>
+  </div>
+</section>
+
 
   <!-- Team Section -->
   <section id="team" class="py-16 px-8 bg-white">
     <div class="max-w-7xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-8 text-[#1D3557]">Our Team</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <!-- Team Member 1 -->
         <div class="text-center">
           <img src="images/team1.jpg" alt="Team Member 1" class="w-40 h-40 mx-auto rounded-full mb-4">
-          <h3 class="text-2xl font-semibold text-[#333333]">Alice Johnson</h3>
-          <p class="text-gray-600">Blockchain Expert</p>
+          <h3 class="text-2xl font-semibold text-[#333333]">Vinicius Felix</h3>
+          <p class="text-gray-600">Full Stack Developer</p>
         </div>
         <!-- Team Member 2 -->
         <div class="text-center">
           <img src="images/team2.jpg" alt="Team Member 2" class="w-40 h-40 mx-auto rounded-full mb-4">
-          <h3 class="text-2xl font-semibold text-[#333333]">Bob Smith</h3>
-          <p class="text-gray-600">Full Stack Developer</p>
+          <h3 class="text-2xl font-semibold text-[#333333]">Lucas Toledo</h3>
+          <p class="text-gray-600">Game Designer</p>
         </div>
         <!-- Team Member 3 -->
         <div class="text-center">
           <img src="images/team3.jpg" alt="Team Member 3" class="w-40 h-40 mx-auto rounded-full mb-4">
-          <h3 class="text-2xl font-semibold text-[#333333]">Carol Lee</h3>
-          <p class="text-gray-600">Research Scientist</p>
-        </div>
-        <!-- Team Member 4 -->
-        <div class="text-center">
-          <img src="images/team4.jpg" alt="Team Member 4" class="w-40 h-40 mx-auto rounded-full mb-4">
-          <h3 class="text-2xl font-semibold text-[#333333]">David Kim</h3>
-          <p class="text-gray-600">Web3 Developer</p>
+          <h3 class="text-2xl font-semibold text-[#333333]">Vitor Castilho</h3>
+          <p class="text-gray-600">Engenheiro</p>
         </div>
       </div>
     </div>
   </section>
+  
 
   <!-- FAQ Section -->
-  <section id="faq" class="py-16 px-8 bg-gray-50">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-8 text-[#1D3557]">Frequently Asked Questions</h2>
-      <div class="space-y-6">
-        <!-- FAQ Item 1 -->
-        <div>
-          <h3 class="text-2xl font-semibold mb-2">What is SurgicalBrasil?</h3>
-          <p class="text-gray-600">
-            SurgicalBrasil is a Web3-based platform designed to provide secure, decentralized publishing for researchers.
+ <!-- FAQ Section with Animation -->
+<section id="faq-section" class="relative w-full min-h-screen bg-gray-100 flex flex-col justify-center items-center py-16 px-6">
+  <!-- FAQ Content -->
+  <div class="relative z-10 w-full max-w-2xl bg-white shadow-lg rounded-lg p-8">
+    <!-- FAQ Heading -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center w-full mb-8">Frequently Asked Questions</h2>
+
+    <!-- FAQ Items -->
+    <div class="space-y-4">
+      <!-- FAQ 1 -->
+      <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+        <button class="w-full flex justify-between items-center p-4 text-lg font-semibold focus:outline-none" data-target="#faq1">
+          <span>What is SurgicalBrasil?</span>
+          <svg class="w-6 h-6 text-gray-600 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq1" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="p-4 text-gray-700">
+            SurgicalBrasil is a platform designed to provide secure, decentralized publishing for researchers.
           </p>
         </div>
-        <!-- FAQ Item 2 -->
-        <div>
-          <h3 class="text-2xl font-semibold mb-2">How does it work?</h3>
-          <p class="text-gray-600">
-            Using blockchain technology and smart contracts, SurgicalBrasil ensures that research is protected and only accessible to authorized individuals.
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+        <button class="w-full flex justify-between items-center p-4 text-lg font-semibold focus:outline-none" data-target="#faq2">
+          <span>How does the platform work?</span>
+          <svg class="w-6 h-6 text-gray-600 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq2" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="p-4 text-gray-700">
+            Using blockchain technology, our platform ensures data security, transparency, and accessibility for researchers.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+        <button class="w-full flex justify-between items-center p-4 text-lg font-semibold focus:outline-none" data-target="#faq3">
+          <span>How secure is SurgicalBrasil?</span>
+          <svg class="w-6 h-6 text-gray-600 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq3" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="p-4 text-gray-700">
+            Our platform uses advanced encryption techniques and decentralized storage to ensure the highest level of data security.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+        <button class="w-full flex justify-between items-center p-4 text-lg font-semibold focus:outline-none" data-target="#faq4">
+          <span>How can I get started?</span>
+          <svg class="w-6 h-6 text-gray-600 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq4" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="p-4 text-gray-700">
+            Click on the "Get Started" button on our homepage to create your account and begin publishing securely with SurgicalBrasil.
           </p>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Call to Action: Get in Touch -->
+    <div class="mt-8 text-center">
+      <a href="https://api.whatsapp.com/send?phone=5511962179865" class="inline-block bg-[#2A9D8F] text-white py-3 px-6 rounded-md font-bold hover:bg-[#1E7A61] transition-all duration-300">
+        Contact Us
+      </a>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="py-8 bg-[#1D3557] text-white text-center">
