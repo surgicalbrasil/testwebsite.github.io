@@ -38,6 +38,10 @@
   <!-- Font Awesome-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
 </head>
 <body class="bg-gray-100 text-gray-800 font-montserrat">
 
@@ -52,10 +56,15 @@
   </section>
   
 <!-- Problem Section -->
-<section id="problem-section" class="w-full min-h-screen flex items-center justify-center bg-gray-100">
+<section id="problem-section" class="w-full min-h-screen flex items-center justify-center bg-gray-100 py-16 px-8">
+  
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
+     <!-- Problem Heading -->
+     <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-[#1D3557] animate__animated animate__fadeInUp">
+      What Challenges Do Researchers Face in Securing Their Work and Gaining Recognition?
+    </h2>
     <!-- Left Column: Video -->
-    <div class="md:row-span-3 w-full h-full">
+    <div id="problem-video" class="opacity-0 transform translate-y-10 md:row-span-3 w-full h-full">
       <video class="w-full h-full rounded-lg shadow-lg object-cover" autoplay loop muted playsinline>
         <source src="./images/website_video2.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -63,43 +72,41 @@
     </div>
 
     <!-- Right Column: Boxes -->
-    <div class="flex flex-col justify-between space-y-6">
-      <div class="p-6 bg-gray-100 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold text-[#2A9D8F] mb-4">Lack of Recognition</h3>
-        <p class="text-gray-700">
-          Many early-career researchers struggle to gain recognition for their work due to limited publication options and competition from established researchers.
-        </p>
-      </div>
-      <div class="p-6 bg-gray-100 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold text-[#E76F51] mb-4">Security Risks</h3>
-        <p class="text-gray-700">
-          Centralized platforms offer little protection for sensitive data, leading to trust issues and potential IP theft.
-        </p>
-      </div>
-      <div class="p-6 bg-gray-100 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold text-[#457B9D] mb-4">Transparency Issues</h3>
-        <p class="text-gray-700">
-          Existing publishing methods lack transparency, making it difficult to trace authorship and verify data integrity.
-        </p>
-      </div>
+    <div id="problem-box1" class="opacity-0 transform translate-y-10 p-6 bg-white rounded-lg shadow-md">
+      <h3 class="text-2xl font-semibold text-[#2A9D8F] mb-4">Lack of Recognition</h3>
+      <p class="text-gray-700">
+        Many early-career researchers struggle to gain recognition for their work due to limited publication options and competition from established researchers.
+      </p>
+    </div>
+    <div id="problem-box2" class="opacity-0 transform translate-y-10 p-6 bg-white rounded-lg shadow-md">
+      <h3 class="text-2xl font-semibold text-[#E76F51] mb-4">Security Risks</h3>
+      <p class="text-gray-700">
+        Centralized platforms offer little protection for sensitive data, leading to trust issues and potential IP theft.
+      </p>
+    </div>
+    <div id="problem-box3" class="opacity-0 transform translate-y-10 p-6 bg-white rounded-lg shadow-md">
+      <h3 class="text-2xl font-semibold text-[#457B9D] mb-4">Transparency Issues</h3>
+      <p class="text-gray-700">
+        Existing publishing methods lack transparency, making it difficult to trace authorship and verify data integrity.
+      </p>
     </div>
   </div>
 </section>
 
 
- <!-- Solution Section -->
- <section id="solution" class="py-16 px-8 bg-white">
+<!-- Solution Section with Animate.css -->
+<section id="solution" class="py-16 px-8 bg-white">
   <div class="max-w-7xl mx-auto">
-    <h2 class="text-4xl font-bold mb-12 text-center text-[#1D3557]">Our Solution</h2>
+    <h2 id="solution-heading" class="opacity-0 transform translate-y-10 text-4xl font-bold mb-12 text-center text-[#1D3557]">
+      Our Solution
+    </h2>
 
     <!-- Horizontal Boxes -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
       
       <!-- Box 1: Decentralized Data Storage -->
-      <div class="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg">
-        <!-- Animation -->
+      <div id="box-storage" class="opacity-0 transform translate-y-10 flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg">
         <div id="canvas-storage" class="w-full h-48 rounded-lg mb-4"></div>
-        <!-- Content -->
         <h3 class="text-2xl font-semibold text-[#2A9D8F] mb-2">Decentralized Data Storage</h3>
         <p class="text-gray-600">
           We leverage Web3 technology to store your research data on a decentralized network, eliminating central points of failure and ensuring data availability at all times.
@@ -107,10 +114,8 @@
       </div>
 
       <!-- Box 2: Advanced Data Encryption -->
-      <div class="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg">
-        <!-- Animation -->
+      <div id="box-encryption" class="opacity-0 transform translate-y-10 flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg">
         <div id="canvas-encryption" class="w-full h-48 rounded-lg mb-4"></div>
-        <!-- Content -->
         <h3 class="text-2xl font-semibold text-[#E76F51] mb-2">Advanced Data Encryption</h3>
         <p class="text-gray-600">
           Your data is encrypted using advanced cryptographic techniques, ensuring that only authorized users can access sensitive information.
@@ -118,10 +123,8 @@
       </div>
 
       <!-- Box 3: Full Control Over Sharing -->
-      <div class="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg">
-        <!-- Animation -->
+      <div id="box-sharing" class="opacity-0 transform translate-y-10 flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg">
         <div id="canvas-sharing" class="w-full h-48 rounded-lg mb-4"></div>
-        <!-- Content -->
         <h3 class="text-2xl font-semibold text-[#457B9D] mb-2">Full Control Over Sharing</h3>
         <p class="text-gray-600">
           You decide who can access your research. Our platform allows you to securely share your data with specific individuals or organizations while maintaining full control.
@@ -129,19 +132,17 @@
       </div>
 
     </div>
-
-    <!-- Call to Action Buttons -->
-    <div class="mt-16 text-center space-x-4">
-      <button class="px-8 py-4 bg-[#2A9D8F] text-white font-semibold rounded-md hover:bg-[#457B9D] transition duration-300">
+     <!-- Call to Action Buttons -->
+    <div class="mt-16 text-center space-x-4  animate__animated animate__fadeInUp">
+      <a href="https://surgical-brasil.on-fleek.app/" class="px-8 py-4 bg-[#2A9D8F] text-white font-semibold rounded-md hover:bg-[#457B9D] transition duration-300" target="_blank" rel="noopener noreferrer" >
         Plataforma para arquivos confidenciais
-      </button>
-      <button class="px-8 py-4 bg-[#E76F51] text-white font-semibold rounded-md hover:bg-[#C8553D] transition duration-300">
+      </a>
+      <a href="https://www.spatial.io/" class="px-8 py-4 bg-[#E76F51] text-white font-semibold rounded-md hover:bg-[#C8553D] transition duration-300" target="_blank" rel="noopener noreferrer" >
         Acesso ao metaverso protegido
-      </button>
+      </a>
     </div>
   </div>
 </section>
-
 
 
 <!-- Team Section -->
@@ -151,7 +152,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
       
       <!-- Team Member 1 -->
-      <div class="text-center">
+      <div class="text-center animate__animated animate__fadeInLeft">
         <img src="images/member1.png" alt="Team Member 1" class="w-40 h-40 mx-auto rounded-full mb-4">
         <h3 class="text-2xl font-semibold text-[#333333]">Vinicius Felix</h3>
         <p class="text-gray-600 mb-4">Full Stack Developer</p>
@@ -161,7 +162,7 @@
       </div>
       
       <!-- Team Member 2 -->
-      <div class="text-center">
+      <div class="text-center animate__animated animate__fadeInUp">
         <img src="images/member2.png" alt="Team Member 2" class="w-40 h-40 mx-auto rounded-full mb-4">
         <h3 class="text-2xl font-semibold text-[#333333]">Lucas Toledo</h3>
         <p class="text-gray-600 mb-4">Game Designer</p>
@@ -171,7 +172,7 @@
       </div>
       
       <!-- Team Member 3 -->
-      <div class="text-center">
+      <div class="text-center animate__animated animate__fadeInRight">
         <img src="images/member3.png" alt="Team Member 3" class="w-40 h-40 mx-auto rounded-full mb-4">
         <h3 class="text-2xl font-semibold text-[#333333]">Vitor Castilho</h3>
         <p class="text-gray-600 mb-4">Engineer</p>

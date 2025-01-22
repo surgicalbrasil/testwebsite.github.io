@@ -400,3 +400,28 @@ document.querySelectorAll('.faq-item button').forEach((btn) => {
     btn.querySelector('svg').classList.toggle('rotate-180');
   });
 });
+
+
+
+// Function to handle animations on scroll
+function animateOnScroll(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+      entry.target.classList.remove('opacity-0', 'translate-y-10');
+      observer.unobserve(entry.target); // Stop observing after animation triggers
+    }
+  });
+}
+
+// Intersection Observer
+const observer = new IntersectionObserver(animateOnScroll, {
+  threshold: 0.2, // Trigger when 20% of the element is visible
+});
+
+// Select elements to animate
+const elementsToAnimate = document.querySelectorAll('#solution-heading, #box-storage, #box-encryption, #box-sharing, #problem-video, #problem-box1, #problem-box2, #problem-box3');
+elementsToAnimate.forEach(element => {
+  observer.observe(element);
+});
+
