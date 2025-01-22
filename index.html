@@ -38,18 +38,24 @@
 <body class="bg-gray-100 text-gray-800 font-montserrat">
 
   <!-- Hero Section -->
-  <section id="hero" class="relative h-screen flex items-center justify-center text-center bg-[#1D3557] text-white">
-    <div id="three-container" class="absolute inset-0 z-0"></div>
-    <div class="relative z-10">
-      <h1 class="text-6xl md:text-8xl font-bold mb-8">SurgicalBrasil</h1>
+  <section id="hero" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+    <!-- Video Background -->
+    <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay loop muted playsinline>
+      <source src="./images/website_video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Content -->
+    <div class="relative z-10 text-white">
+      <h1 class="text-6xl md:text-8xl font-bold mb-8 text-[#DE8531]">SurgicalBrasil</h1>
       <p class="text-2xl md:text-4xl mb-8">Empowering researchers with secure, decentralized publishing.</p>
     </div>
-  </section>  
+  </section>
   
   <!-- Problem Boxes and Images in Zigzag Pattern -->
   <section id="problem-section" class="w-full min-h-screen bg-white flex flex-col justify-center items-center py-8 px-4">
     <h2 class="problem-box text-4xl md:text-5xl font-bold mb-16 text-center" data-animation="animate__fadeInDown">
-      What are the main challenges faced by early-career researchers?
+      What are the main challenges faced by early-career researchers
     </h2>
     <div class="flex flex-col gap-16 w-full max-w-7xl">
       
